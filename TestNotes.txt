@@ -1,0 +1,12 @@
+Tools for testing node app-
+Mocha and chai.
+
+Chai comes with assertion libs. like expect(fn call).to.be.()
+it('name of test',() => {
+
+})
+
+For stubing the rest calls or db operations we can stub it.
+
+To prevent hoisting use the - use 'strict mode'
+this will make js code to execute in that order strictly.

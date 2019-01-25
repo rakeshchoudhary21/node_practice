@@ -1,0 +1,21 @@
+{
+  "name": "nodepractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TestServer.js",
+  "scripts": {
+    "start": "node TestServer.js",
+    "test": "mocha --recursive --timeout 10000"
+  },
+  "author": "rakesh choudhary",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.4.5",
+    "node-fetch": "^2.3.0"
+  }
+}
