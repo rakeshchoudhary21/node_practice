@@ -22,10 +22,12 @@ headset.findOneAndUpdate(query, update, options, function(error, result) {
 //otherwise they return a query object
 //on the query object u can call the exec with call back.
 
-headset.findOne({id:'1'},(err,data) => {
-    console.log(data)
-})
+var findOneHeadset = function(){
+    return headset.findOne({id:'1'})
+}
 
+
+module.exports.findOneHeadset = findOneHeadset
 
 
 
