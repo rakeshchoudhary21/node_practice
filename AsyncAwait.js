@@ -16,7 +16,7 @@ function addToArr(newItem){
     })
 }
 async function root(){
-     await addToArr({title: 'Developer',job:'Learn and Enjoy'})
+     await addToArr({title: 'Developer',job:'Coding is life.'})
      printArray()
 }
 

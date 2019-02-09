@@ -1,0 +1,28 @@
+<html>
+<title>Web sockets example</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script type="text/javascript">
+    function clearAll(){
+        var allInputs = document.getElementsByTagName('input');
+        console.log(Object.keys(allInputs));
+        [].forEach.call(allInputs,(input_tag) => {
+        input_tag.value = '';
+        })
+    }
+    </script>
+<body>
+    <h3> WEB SOCKETS DEMO</h3>
+    
+    <label style="font-weight: bold"> Name: </label><input id="chat_msg" type='text' placeholder="type your name here turd"/>
+    <input id="submit" type="submit"  value="GO!!!"/>
+
+
+    <div id="output"></div>
+    <script src="./js/client_socket.js">
+        
+        </script>
+        
+
+</body>
+
+</html>
