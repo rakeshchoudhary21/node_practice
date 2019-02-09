@@ -1,9 +1,9 @@
 var net = require('net');
 function createSocket(socketName){
 var client = new net.Socket(socketName);
+
 client.connect({port:1337, host:'localhost'}, () => {
-	console.log('Connected');
-	client.write('Hello, server! Love, Client.');
+	client.write(socketName+':pinging server!!!\r\n');
 });
 
 client.on('data', data => {
@@ -22,7 +22,7 @@ return client;
 }
 
 var rakesh = createSocket('RAKESH')
-rakesh.write('I got to focus on my career man!!!')
+rakesh.write('RAKESH:I got to focus on my career man!!!\n\r')
 
 setTimeout(()=> {
     console.log('Its time to shut this down!!!')

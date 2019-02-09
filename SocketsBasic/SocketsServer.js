@@ -1,11 +1,13 @@
 var net = require('net');
 
 var server = net.createServer(socket => {
-	socket.write('Echo server\r\n');
+    console.log('a client has just Connected');
+
     
     socket.on('error',err=> console.log('an error occurred='+JSON.stringify(err)))
     socket.on('data',data=> {
-        console.log('FROM CLIENT:'+data.toString());
+        socket.write('SERVER: I just received some data from u'+socket.remoteAddress)
+        console.log(data.toString());
     })
 });
 
