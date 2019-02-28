@@ -1,0 +1,11 @@
+{
+  "name": "goingadvanced",
+  "version": "1.0.0",
+  "description": "advanced node concepts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rakesh choudhary",
+  "license": "ISC"
+}
